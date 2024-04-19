@@ -1,0 +1,90 @@
+@keyframes gridFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-image: url('./images/background.jpeg');
+  background-size: cover;
+}
+
+form {
+  margin-right: 90px;
+  width: 40%;
+  padding: 20px;
+  animation: gridFadeIn 1s ease-out;
+}
+
+#login-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  animation: gridFadeIn 1s ease-out;
+}
+
+.error {
+  font-size: small;
+  color: red;
+  margin-top: 5px;
+  animation: gridFadeIn 1s ease-out;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  animation: gridFadeIn 1s ease-out;
+}
+
+.btn {
+  width: 30%;
+  animation: gridFadeIn 1s ease-out;
+}
+
+.dashboard {
+  background-image: url(./images/welcome.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  position: absolute;
+}
+
+.details h2{
+  position: relative;
+  top: 200px;
+  left: 50px;
+  font-size: 50px;
+}
+.details p{
+  position: relative;
+  top: 200px;
+  left: 150px;
+  font-size: 25px;
+}
+  
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form, .dashboard {
+  animation: fadeIn 1s ease-out;
+}
